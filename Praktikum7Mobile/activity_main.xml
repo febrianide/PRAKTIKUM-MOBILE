@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="end|center_vertical"
+        android:text="0"
+        android:textSize="36sp"
+        android:background="#FFFFFF"
+        android:textColor="#6D4C41"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <GridLayout
+        android:id="@+id/gridButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- Baris 1 -->
+        <Button android:text="7" style="@style/CalcBtn"/>
+        <Button android:text="8" style="@style/CalcBtn"/>
+        <Button android:text="9" style="@style/CalcBtn"/>
+        <Button android:text="÷" style="@style/CalcBtn"/>
+
+        <!-- Baris 2 -->
+        <Button android:text="4" style="@style/CalcBtn"/>
+        <Button android:text="5" style="@style/CalcBtn"/>
+        <Button android:text="6" style="@style/CalcBtn"/>
+        <Button android:text="×" style="@style/CalcBtn"/>
+
+        <!-- Baris 3 -->
+        <Button android:text="1" style="@style/CalcBtn"/>
+        <Button android:text="2" style="@style/CalcBtn"/>
+        <Button android:text="3" style="@style/CalcBtn"/>
+        <Button android:text="−" style="@style/CalcBtn"/>
+
+        <!-- Baris 4 -->
+        <Button android:text="C" style="@style/CalcBtn"/>
+        <Button android:text="0" style="@style/CalcBtn"/>
+        <Button android:text="=" style="@style/CalcBtn"/>
+        <Button android:text="+" style="@style/CalcBtn"/>
+    </GridLayout>
+</LinearLayout>
